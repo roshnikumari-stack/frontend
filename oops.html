@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     /*class heading{
+       heading() {
+        console.log("oops program")
+       }
+        heading1() {
+        console.log("oops ")
+       }
+ }
+ let a=new heading()
+a.heading()
+a.heading1()*/
+
+class student{
+    constructor(name,age){
+        this.stname=name;
+        this.stage=age;
+    }
+    biodata(){
+        document.writeln(`student name is ${this.stname} student age is ${this.stage} `)
+    }
+}
+
+
+
+
+let a = new student('amit',30)
+a.biodata()
+let b = new student('roshni',18)
+b.biodata()
+ 
+    </script>
+</body>
+</html>

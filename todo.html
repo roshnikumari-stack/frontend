@@ -1,0 +1,37 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do App</title>
+  <style>
+    body { font-family: Arial; }
+    input { padding: 5px; }
+    button { padding: 5px 10px; }
+    li { margin-top: 5px; }
+  </style>
+</head>
+<body>
+  <h2>My To-Do List</h2>
+  <input id="task" type="text" placeholder="Enter task...">
+  <button onclick="addTask()">Add</button>
+  <ul id="list"></ul>
+
+  <script>
+    function addTask() {
+      let task = document.getElementById("task").value;
+      if (task === "") return alert("Please enter a task");
+      let li = document.createElement("li");
+      li.textContent = task;
+      li.onclick = () => li.style.textDecoration = "line-through";
+      document.getElementById("list").appendChild(li);
+      document.getElementById("task").value = "";
+    }
+  </script>
+
+
+
+	</script>
+	</body>
+</html>
+</body>
+</html>

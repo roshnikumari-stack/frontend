@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+    .parent{
+        display: flex;
+      flex-wrap: wrap;
+          
+    }
+    .Services{
+        display: flex;
+        color: purple;
+        border: 1px purple solid;
+      box-shadow: 2px 4px 6px;
+        margin: 20px;
+        flex-wrap:wrap ;
+     width: 30%;
+     padding: 30px;
+     background-color: white;
+       
+    }
+    .Services img{
+height: 50px; width: 50px;
+    }
+    .Services span{
+        font-size: 30px;
+       
+    }
+    .Services p{
+        color:rgb(112, 55, 112);
+        font-size: 20px;
+    }
+    body{
+        padding-left: 200px;
+      background-image: url("data:image/jpeg;base64,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");
+      background-size: cover;
+    }
+</style>
+<body>
+    <div class="parent">
+     
+        <div class="Services"data-aos="zoom-in">
+       
+            <img src="https://cdn-icons-png.flaticon.com/128/13904/13904012.png" alt="">
+            <span>Css Templates</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+             <div class="Services" data-aos="zoom-in-up" data-aos-delay="100">
+                 <img src="https://cdn-icons-png.flaticon.com/128/2779/2779775.png" alt="">
+            <span>Responsive Designs</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+             </div>
+               <div class="Services" data-aos="zoom-in-down" data-aos-delay="200">
+                 <img src="https://cdn-icons-png.flaticon.com/128/4961/4961759.png" alt="">
+            <span>Customer Support</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+             </div>
+               <div class="Services" data-aos="zoom-in-left" data-aos-delay="300">
+                 <img src="https://cdn-icons-png.flaticon.com/128/3867/3867730.png" alt="">
+            <span>Web Pages</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+             </div>
+               <div class="Services"data-aos="zoom-in-right" data-aos-delay="400">
+                 <img src="https://cdn-icons-png.flaticon.com/128/3085/3085088.png" alt="">
+            <span>Mobile and Tablet ready!</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+             </div>
+               <div class="Services"data-aos="zoom-out" data-aos-delay="500">
+                 <img src="https://cdn-icons-png.flaticon.com/128/17372/17372993.png" alt="">
+            <span>Fully Customizable </span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+           
+             </div>
+       
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+</body>
+</html>

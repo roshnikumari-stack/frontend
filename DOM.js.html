@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.para1{
+    color:red;
+font-size: 20px;
+}
+.para2{
+    color:green;
+font-size: 20px;
+}
+    p{
+color: blue;
+font-size: 20px;
+
+    }
+    body{
+        padding: 20px;
+        background-color: gray;
+
+    }
+    button{
+        color:white;
+        border-radius: 4px;
+        background-color: blue;
+        font-size: 20px;
+    }
+    img{
+        
+        font-size: 20px;
+        padding: 5px;
+    }
+</style>
+<body>
+    <!--<h1 id="heading">Hello World</h1>
+    <p class="text">Welcome to JavaScript</p>-->
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, magni nesciunt! 
+        Nihil pariatur quo maiores similiquecumque obcaecati. 
+        Harum odit blanditiis, illo quis quidem hic enim perferendis molestias vero rem?</p><br>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, magni nesciunt! 
+        Nihil pariatur quo maiores similiquecumque obcaecati. 
+        Harum odit blanditiis, illo quis quidem hic enim perferendis molestias vero rem?</p><br><br>
+
+        <a href="https://www.google.com/"><img src="https://cdn-icons-png.flaticon.com/128/281/281764.png"
+             alt="" height="40px" width="40px"></a><br><br>
+
+             <button onclick="btn()">Modify Document</button>
+
+
+
+
+
+
+    <script>
+       /*  document.getElementById("heading").innerHTML="Hello world!";
+         let element=document.getElementById("heading");
+         element.style.color="blue";
+          element.style.fontSize="90px";
+         
+
+         document.querySelector(".text").innerHTML="welcome";
+  document.querySelector(".text").style.cssText=
+  "font-size:60px;color:green;background-color:gray;";*/
+
+  function btn(){
+    const para=document.getElementsByTagName("p");
+    para[0].setAttribute("class","para1");
+     para[1].setAttribute("class","para2");
+     const body=document.getElementsByTagName("body");
+     body[0].setAttribute("style","background-color:rgb(215, 236, 236)");
+     const a=document.getElementsByTagName("a");
+     a[0].innerHTML='<img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" height="40px",width="40px">'
+     a[0].setAttribute("href","https://www.youtube.com/")
+      const button=document.getElementsByTagName("button");
+button[0].setAttribute("style",
+     "color:white; border-radius:4px; font-size:20px; background-color:red;"
+)
+    
+
+  }
+
+
+
+    </script>
+</body>
+</html>

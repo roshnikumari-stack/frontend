@@ -1,48 +1,78 @@
-body{
-   
-    
-    align-items: center;
-    margin-left: 20px;
-    justify-content: space-evenly;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+form {
     display: flex;
-    display: inline;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
-.parent{
-    display:  flex;
-justify-content: space-evenly;
-justify-items: center;
-justify-content: space-around;
-margin-top: 90px;
 
+form input, form select {
+    padding: 10px;
+    margin-right: 10px;
+    flex: 1;
 }
-img{
-   box-sizing: border-box;
-   border-radius: 450px ;
-   border: 10px solid palevioletred;
-   height: 200px; width: 200px;
- 
 
+form button {
+    padding: 10px 15px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }
-h1{
-    color: blue;
-    font-size: 40px;
-    padding-left: 40px;
-  
-    
+
+form button:hover {
+    background-color: #ff4757;
 }
-h2{
-     color: rgb(52, 52, 111);
-    font-size: 25px;
-    padding-left: 30px;
-    
+
+#transaction-list {
+    list-style: none;
+    padding: 0;
 }
-a{
-  
-   margin-left: 15px;
-    padding: 6px;
-    background-color:skyblue;
-   border-radius: 150px;
-    border: 2px solid black;
-    }
-    
+
+#transaction-list li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.transaction-buttons button {
+    margin-left: 5px;
+    padding: 3px 6px;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.transaction-buttons .edit {
+    background-color: #ffa502;
+    color: white;
+}
+
+.transaction-buttons .delete {
+    background-color: #ff4757;
+    color: white;
+}

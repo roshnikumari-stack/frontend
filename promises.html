@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promises</title>
+</head>
+<body>
+    <script>
+       /* //synchrronous example
+        setTimeout(()=>{
+console.log("age is 19");
+        },3000);
+
+setTimeout(()=>{
+console.log("My name is Roshni");
+},2000);{
+   setTimeout(()=>{
+     console.log("from punjab");
+   },4000);
+}*/
+
+/* //Asynchrronous example
+console.log("hello")
+console.log("hello js")
+console.log("hello jsss")*/
+
+ let myPromise=new Promise(function(resolve,reject){
+    let PromiseDone=true;
+    if(PromiseDone);
+    resolve("hello");
+    reject("hello js")
+ });
+ myPromise
+ .then(function(result){
+    console.log(result)
+ })
+ .catch(function(error){
+console.log(error)
+ })
+ 
+
+ 
+    
+ 
+
+    </script>
+</body>
+</html>

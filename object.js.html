@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ //creating an object
+/* let person={
+    name:"Roshni",
+    age:20,city:"Ludhaina",
+    isStudent:true
+};console.log(person.name)
+console.log(person.age)
+console.log(person.city)*/
+
+ //assesing and modifying
+ //dot notaion
+/* let person={
+    name:"Roshni",
+    age:20,city:"Ludhaina",
+    isStudent:true
+};*/
+ //console.log(person.name)
+//console.log(person.age)
+//console.log(person.city)
+
+//bracket notaion
+//console.log(person["name"])
+
+//cloning an object
+/*let person={name:"Roshni",age:20}
+let clone={...person};
+console.log(clone)*/
+
+//Sorting an Array of Objects
+//sort by number
+ /*let students = [
+  { name: "Roshni", age: 20 },
+  { name: "Amit", age: 22 },
+  { name: "Neha", age: 19 }
+];*/
+//students.sort((a,b)=>a.age-b.age);
+//students.sort((a,b)=>b.age-a.age);
+//console.log(students)
+
+//sort by string
+
+//students.sort((a,b)=>a.name.localeCompare(b.name));
+//console.log(students)
+/* students.sort((a,b)=>{
+    if(a.age===b.age){
+        return(a.name.localeCompare(b.name));
+    
+    }
+    return(a.age-b.age)
+});console.log(students)*/
+
+/*filtering method
+let students = [
+  { name: "Roshni", age: 18, isStudent: true },
+  { name: "Amit", age: 22, isStudent: false },
+  { name: "Neha", age: 19, isStudent: true },
+  { name: "Raj", age: 25, isStudent: false }
+];
+//let result=students.filter(student=>student.age>20);
+//let result=students.filter(student=>student.isStudent);
+let result=students.filter(student=>student.age<20 && student.isStudent);
+console.log(result)*/
+
+/* //merging objects
+let a={name:"Roshni", city:"Ludhaiana", };
+let b={  age: 19, isStudent: true};
+let merged={...a,...b};
+console.log(merged);
+
+
+//Destruct
+let person=[name="Roshni",age=18,city="Ludhaiana"];
+console.log(name)
+console.log(age)*/
+
+//Remaining properties
+/* const employee = { empName: "Bob", empAge: 30 };
+
+ const { empName: name1, empAge: age } = employee;
+ console.log(name1); // Output: Bob
+ console.log(age)
+
+ let person={name:"Roshni",age:20};
+ let Renamed={name1:person.name,age1:person.age};
+ console.log(Renamed.name1)
+ console.log(Renamed.age1)*/
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+    </script>
+</body>
+</html>

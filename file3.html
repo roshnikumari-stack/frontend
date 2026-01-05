@@ -1,65 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-<link rel="stylesheet" href="style.css">
-
 <body>
-   <div>
-      <nav>
-        <div class="logo">
-            <p>Portfolio</p>
-        </div>
-        <ul type="none">
-            <li><a href="">Home</a></li> 
-              <li><a href="">About</a></li>
-        </ul>
-      </nav>
-
-        
-         <h1>About me</h1>
-         <p>Responsible and motivated student ready to apply education in the workspace.Offers excellent technical abilities widt
-            software and applications,abilities to handle challenging work and excellent time management skills.
-            Ambitious, career focused job seeker, anxious to obtain an entrey level job to help launch career while achieving 
-            company goals.
-         </p>
-         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ZHqWA3ajb0g2TmGMYzSoRpiR5HqjelAKfw&s
-         " height="300px" width="300px">
-         <div id="#">
-            <h1>Educational Details</h1>
-            <ul>
-                <li>CSE - GNDEC College,Ludhiana</li>
-                <li>XII - Govt.Girls.Sen.Sec.Smart School,Mansuran</li>
-                 <li>X - Govt.Girls.Sen.Sec.Smart School,Mansuran</li>
-            </ul>
-         </div>
-        
-            <h1>Skills</h1>
-            <div id="*">
-                <h2>Front-End Tecnologies</h2>
-                <ul>
-                    <li>HTML</li><li>React.Js</li>
-                    <li>CSS</li><li>JavaScript</li>
-
-                </ul>
-                 <h2>Back-End Tecnologies</h2>
-                <ul>
-                    <li>Node.js</li><li>Express.js</li>
-                    <li>JavaScript</li>
-
-                </ul>
-                
-
-            </div>
-            </div>
-
-       
-
-
-
+  <style>
+    input{
+      height: 20px;
+      width: 40px;
+    }
+   .parent{
+    box-sizing: border-box;
+  height: 400px; width: 500px;
+    background-color:rgb(97, 99, 131);
+      border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px blue;
+    }
+    body{
+      
+     padding-left: 350px;
+     padding-top: 50px;
+     background: linear-gradient(blue,white);
+     background-repeat: no-repeat;
+    }
+   
     
+    form{
+      text-align: center;
+     color:black;
+     font-weight: bold;
+     font-size: 20px;
+    }
+   .parent h1{
+     
+      text-align: center;
+      color: blue;
+text-shadow:2px 2px 2px;
+        }
+    button{
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+    background-color:skyblue;
+    border-radius: 10px;
+    border: skyblue;
+    }  
+    #data3{
+background-color: black;
+color: white;
+font-weight: bold;
+font-size: 20px;
+    }
+        
+        
+  </style>
+  <div class="parent">
+  <h1>Check your result status</h1>
+  <form action="">
+
+    <label for="chemistry">Chemistry:</label>
+    <input type="number" id="num1">
+     <label for="phy">Physics: </label>
+    <input type="number" id="num2">
+     <label for="math">Math:</label>
+    <input type="number" id="num3"><br><br>
+     <label for="java">Java:</label>
+    <input type="number" id="num4">
+     <label for="eng">English: </label>
+    <input type="number" id="num5">
+    <button type="button" onclick="marks()">result status</button></div>
+
+    <p id="data1"></p>
+     <p id="data2"></p>
+      <p id="data3"></p>
+
+
+  </form>
+  <script>
+    function marks(){
+      let a = parseInt(document.getElementById("num1").value);
+      let b = parseInt(document.getElementById("num2").value);
+      let c = parseInt(document.getElementById("num3").value);
+      let d = parseInt(document.getElementById("num4").value);
+      let e = parseInt(document.getElementById("num5").value);
+
+      let total = a+b+c+d+e;
+      let perc = total*100/500;
+
+      document.getElementById("data1").innerHTML="total marks=" +total;
+      document.getElementById("data2").innerHTML="percentage=" +perc+"%";
+
+      if(perc>=60){
+        document.getElementById("data3").innerHTML= "Congrats! You got first division with"+perc+"%";
+      }
+       else if(perc>=45 && perc<=59){
+        document.getElementById("data3").innerHTML= "Congrats! You got second division with"+perc+"%";
+      }
+       else if(perc>=33 && perc<=44){
+        document.getElementById("data3").innerHTML= "Congrats! You got third division with"+perc+"%";
+      }
+       else{
+        document.getElementById("data3").innerHTML= "Sorry! you are fail. ";
+      }
+
+    }
+  </script>
 </body>
 </html>

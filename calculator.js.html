@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        padding-top: 70px;
+    }
+    button{
+    
+       padding: 5px;
+        margin: 10px;
+        border-radius: 8px ;
+         width: 45px;
+      height: 45px;
+      cursor: pointer;
+      border: white;
+      font-size: 20px;
+    }
+    input{
+        height: 40px;
+        width: 250px;
+          font-size: 20px;
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .operator{
+  font-size: 35px; }
+   
+
+    
+</style>
+<body>
+    <div class="cal">
+    <input type="text" placeholder="0" id="display" size="30px"><br><br>
+
+    <button onclick="clearDisplay()" style="color: orange; font-weight: bold;">C</button>
+     <button onclick="del()" style="color: orange; font-weight: bold;">del</button>
+      <button onclick="per()" style="color: orange; font-weight: bold;">%</button>
+       <button onclick="num('/')" style="color: orange; font-weight: bold;">/</button><br><br>
+
+       <button onclick="num('7')">7</button>
+       <button onclick="num('8')">8</button>
+       <button onclick="num('9')" >9</button>
+       <button onclick="num('*')" style="color: orange; font-weight: bold;
+       font-size: 35px; vertical-align: bottom;">*</button><br><br>
+
+       <button onclick="num('4')">4</button>
+       <button onclick="num('5')">5</button>
+       <button onclick="num('6')">6</button>
+       <button onclick="num('-')" style="color: orange; font-weight: bold;font-size: 35px;vertical-align:bottom; ">-</button><br><br>
+
+       <button onclick="num('1')">1</button>
+       <button onclick="num('2')">2</button>
+       <button onclick="num('3')">3</button>
+       <button onclick="num('+')" style="color: orange; font-weight: bold;font-size:35px;vertical-align:bottom;">+</button><br><br>
+
+       <button onclick="num('0')">0</button>
+        <button onclick="num('.')" style="color: orange; font-weight: bold;font-size: 35px; 
+          vertical-align: bottom; ">.</button>
+         <button onclick="calculate()" style="color:white; font-weight: bold;background-color: orange;">=</button>
+       <button onclick="num('>>')" style="color: orange; font-weight:bold ">>></button></div>
+       
+<script>
+    
+let = document.getElementById("display")
+
+function clearDisplay(){
+    display.value="";
+}
+
+function num(value){
+display.value+= value;
+}
+
+function calculate(){
+   let result= eval(display.value);
+   display.value=result;
+}
+
+function del(){
+  let value= display.value
+    display.value=value.slice(0,-1)
+}
+
+function per(){
+display.value=eval(display.value+"/100")
+}
+    
+</script>
+</body>
+
+</html>

@@ -1,152 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registration Form</title>
-
-    <style>
-        h1 {
-            text-align: center;
-        }
-
-        table {
-            border: 1px solid black;
-            size: 20;
-            background-color: antiquewhite;
-
-        }
-    </style>
-
-
+    <title>Document</title>
 </head>
-
 <body>
+     <!---first input<input type="text" id="first"/><br><br>
+     second input<input type="text" id="second"/><br><br>
+     <button onclick="btn()">Click Here</button>--->
 
-    <form>
-        <table align="center" width="700" cellpadding="5">
-            <tr>
-                <td align="center" colspan="2">
-                    <h1>STUDENT REGISTRATION FORM</h1>
-                </td>
-            </tr>
-            <tr>
-                <td>Student Name:</td>
-                <td>
-                    <input type="text" size="20" placeholder="First name">
-                    <input type="text" size="20" placeholder="Last name">
+      first input<input type="number" id="first"/><br><br>
+     second input<input type="number" id="second"/><br><br>
+     <button onclick=" add()">+ </button>
+      <button onclick="sub()">- </button>
+       <button onclick="mul()">* </button>
+        <button onclick="div()">/ </button>
+         <button onclick="per()">% </button>
+     <p id="result"></p>
 
-                </td>
-            </tr>
-            <tr>
-                <td>Roll No.:</td>
-                <td>
-                    <input type="text" size="42">
-                </td>
-            </tr>
-            <tr>
-                <td>Father's Name:</td>
-                <td>
-                    <input type="text" size="42">
-                </td>
-            </tr>
-            <tr>
-                <td>Date Of Birth:</td>
-                <td>
-                    <input type="date" size="20">
+    <p id="output"></p>
+<!-------------greater no.------->
+    <!--<label for="value a" id="first">Value a</label>
+    <input type="number" id="first"><br><br>
+     <label for="value b" id="second">Value b</label>
+      <input type="number" id="second"><br><br>
+      <label for="value c" id="third">Value c</label>
+       <input type="number" id="third"><br><br>
+       <button onclick="submit()">Submit</button>
 
-                </td>
-            </tr>
-            <tr>
-                <td>Mobile No.:</td>
-                <td>
-                    <input type="text" value="+91" size="1">
-                    <input type="text" size="42">
-                </td>
-            </tr>
-            <tr>
-                <td>E-mail id:</td>
-                <td>
-                    <input type="text" size="42">
-                </td>
-            </tr>
-            <tr>
-                <td>Password:</td>
-                <td>
-                    <input type="password" size="42">
-                </td>
-            </tr>
-            <tr>
-                <td>Gender:</td>
-                <td>
-                    <input type="radio" size="4" name="g" /> Male
-                    <input type="radio" size="4" name="g" />Female
-                </td>
-            </tr>
-            <tr>
-                <td>Branch:</td>
-                <td>
-                    <input type="radio" size="4" name="b" />CSE
-                    <input type="radio" size="4" name="b" />IT
-                    <input type="radio" size="4" name="b" />ME
-                    <input type="radio" size="4" name="b" />ECE
-                    <input type="radio" size="4" name="b" />EE
-                    <input type="radio" size="4" name="b" />CE
-
-
-                </td>
-            </tr>
-            <tr>
-                <td>Course:</td>
-                <td>
-
-                    <select id="Courses">
-                        <option></option>
-                        <option>Cyber Security</option>
-                        <option>Machine Learning</option>
-                        <option>Artificial Intelligence</option>
-                        <option>Web development</option>
-                        <option>Software Engineering</option>
-
-
-
-                    </select>
-
-                </td>
-
-            </tr>
-            <tr>
-                <td>Student Photo:</td>
-                <td>
-                    <input type="file" size="20">
-                </td>
-            </tr>
-            <tr>
-                <td>City:</td>
-                <td>
-                    <input type="text" size="42">
-                </td>
-            </tr>
-            <tr>
-                <td>Address:</td>
-                <td>
-
-                    <textarea cols="40" rows="6"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                <td>
-                    <input type="submit" value="register">
-                </td>
-
-               
-            </tr>
-        </table>
-        </forms>
-       
-        
+       <p id="result"></p>-->
+<!------------------------------------------->
 </body>
+<script>
+ // function btn(){
+ //alert("Welcome")
+/*const a=document.getElementById("first").value;
+  const b=document.getElementById("second").value;
 
+  if (a==b){
+    document.getElementById("output").innerHTML="correct";
+  }else{
+     document.getElementById("output").innerHTML="incorrect";
+  }
+}*/
+
+
+function add(){
+  var a = parseInt(document.getElementById('first').value);
+   var b = parseInt(document.getElementById('second').value);
+ 
+   var result= a+b;
+   console.log(result);
+
+}
+function sub(){
+  var a = parseInt(document.getElementById('first').value);
+   var b = parseInt(document.getElementById('second').value);
+ 
+   var result= a-b;
+   console.log(result);
+}
+function mul(){
+  var a = parseInt(document.getElementById('first').value);
+   var b = parseInt(document.getElementById('second').value);
+ 
+   var result= a*b;
+   console.log(result);
+}
+function div(){
+  var a = parseInt(document.getElementById('first').value);
+   var b = parseInt(document.getElementById('second').value);
+ 
+   var result= a/b;
+   console.log(result);
+}
+function per(){
+  var a = parseInt(document.getElementById('first').value);
+   var b = parseInt(document.getElementById('second').value);
+ 
+   var result= a%b;
+   console.log(result);
+}
+
+
+/* const a= document.getElementById("first").value;
+const b= document.getElementById("second").value;
+ const c=document.getElementById("third").value;
+ 
+ 
+
+
+  function submit(){
+    let a = parseInt(document.getElementById('first').value);
+   let b = parseInt(document.getElementById('second').value);
+    let c =parseInt (document.getElementById('third').value);
+   
+ if (a > b && a > c) {
+    document.getElementById("result").innerHTML = "a is greater number" ;
+  }
+  else if (b > a && b > c) {
+    document.getElementById("result").innerHTML = "b is greater number";
+  }
+  else if (c > a && c > b) {
+    document.getElementById("result").innerHTML = "c is greater number";
+  }
+  else {
+    document.getElementById("result").innerHTML = "Two or more numbers are equal";
+  }
+}*/
+  
+
+
+  
+</script>
 </html>
