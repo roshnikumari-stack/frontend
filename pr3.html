@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: rgb(161, 158, 158);
+        height: 30px;
+
+    }
+
+    .nav ul {
+        display: flex;
+        gap: 50px;
+        margin-left: 380px;
+    }
+
+    .nav ul a {
+        color: red;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .nav h1 {
+        color: red;
+        font-weight: bold;
+        position: absolute;
+        top: 9px;
+    }
+
+    .nav ul a:hover {
+        background-color: red;
+        color: white;
+
+    }
+
+
+
+    .nav img {
+        height: 30px;
+        width: 30px;
+        padding: 0;
+    }
+
+    .head {
+        text-align: center;
+    }
+
+    .head h1,
+    h2 {
+        color: white;
+        text-shadow: 2px 4px 8px;
+        font-style: oblique;
+    }
+
+    .head p {
+        color: rgb(113, 46, 69);
+        font-weight: bold;
+    }
+
+    body {
+        background-image: linear-gradient(pink, rgb(169, 61, 79), white);
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-wrap: wrap;
+        display: flex;
+        padding-left: 60px;
+    }
+
+    .Parent {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        border: 1px solid palevioletred;
+        margin: 40px;
+        padding: 25px;
+        box-shadow: 2px 4px 8px;
+         width: 20%;
+       height: 30%;
+    }
+
+
+
+
+    .card img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .card h1 {
+        color: white;
+        font-weight: bold;
+        font-style: oblique;
+    }
+
+    .card p {
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <h1>Mirko</h1>
+        <ul type="none">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Plans</a></li>
+
+            <li><a href="#">drop</a>
+
+                <select id="drop">
+                    <option value=""></option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+            <li><img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt=""></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt=""></li>
+            </li>
+        </ul>
+        <!--------------heading------------------>
+    </div>
+    <div class="head">
+        <h2>Our Services</h2>
+        <h1>Explore unlimited Possibilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, asperiores consequatur excepturi, quos
+            in labore nesciunt nihil ipsa similique rem laudantium, odio nobis reprehenderit dolores quam iure doloribus
+            quidem debitis!
+        </p>
+    </div>
+    <!-----------------------------card------------------------>
+    <div class="Parent">
+        <div class="card"data-aos="fade-up">
+            <img src="https://cdn-icons-png.flaticon.com/128/609/609803.png" alt="">
+            <h1>Home Broadband</h1>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Provident, asperiores consequatur excepturi, quos in labore nesciunt.</p>
+        </div>
+        <div class="card"data-aos="fade-down">
+            <img src="https://cdn-icons-png.flaticon.com/128/1459/1459402.png" alt="">
+            <h1>Home Wifi</h1>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Provident, asperiores consequatur excepturi, quos in labore nesciunt.</p>
+        </div>
+        <div class="card"data-aos="fade-right">
+            <img src="https://cdn-icons-png.flaticon.com/128/3616/3616215.png" alt="">
+            <h1>Home Broadband</h1>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Provident, asperiores consequatur excepturi, quos in labore nesciunt.</p>
+        </div>
+
+        <div class="card"data-aos="fade-left">
+            <img src="https://cdn-icons-png.flaticon.com/128/2920/2920369.png" alt="">
+            <h1>Mobile Connection</h1>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Provident, asperiores consequatur excepturi, quos in labore nesciunt.</p>
+        </div>
+        <div class="card"data-aos="fade-up-right">
+            <img src="https://cdn-icons-png.flaticon.com/128/6783/6783360.png" alt="">
+            <h1>security</h1>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Provident, asperiores consequatur excepturi, quos in labore nesciunt.</p>
+        </div>
+        <div class="card"data-aos="fade-up--left">
+            <img src="https://cdn-icons-png.flaticon.com/128/1170/1170586.png" alt="">
+            <h1>Tv Setup Box</h1>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Provident, asperiores consequatur excepturi, quos in labore nesciunt.</p>
+        </div>
+    </div>
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>

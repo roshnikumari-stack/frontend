@@ -1,0 +1,89 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+   font-size: 20px;
+   
+
+}
+.nav ul{
+    display: flex;
+gap: 30px;
+justify-content: space-evenly;
+
+   
+}
+.nav a{
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+ .nav img{
+height: 30px; width: 30px;
+padding:0;
+}
+body{
+  padding: 20px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWtDb4PfIz8qEc7lZ0utKj92fc21Qk3rW-Sg&s");
+background-size: cover;
+background-repeat: no-repeat;}
+.head h1{
+color: rgb(38, 105, 192);
+}
+.color{
+  color: blue;
+}
+.head img{
+height: 20px;
+width: 20px;
+
+}
+.head p{
+
+  padding-right: 450px;
+  font-size: 20px;
+  color: rgb(41, 40, 40);
+}
+.head span{
+  color: rgb(41, 40, 40);
+  font-size: 20px;
+  font-weight: bold;
+}
+.head h1{
+    padding-right: 450px;
+  font-size: 60px;
+  text-shadow: 2px 4px 4px rgb(53, 53, 132);
+  
+
+  font-family: "Montagu Slab", serif;
+ 
+  font-weight:bold;
+  font-style: normal;
+}
+  
+
+.head h1 span{
+  font-size: 60px;
+    font-family: "Montagu Slab", serif;
+  font-optical-sizing: auto;
+  font-weight:bold;
+  font-style: normal;
+  
+}
+.head a{
+  text-decoration: none;
+  border: 2px solid blue;
+  color: blue;
+font-size: 20px;
+padding: 10px;
+font-weight: bold;
+box-shadow: 4px 8px 8px;
+
+
+}
+
+
